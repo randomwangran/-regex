@@ -1,3 +1,8 @@
+* Thompson NFA is so fast!
+
+https://swtch.com/~rsc/regexp/regexp1.html
+
+
 * https://emacs-china.org/t/topic/11860/4
 
   
