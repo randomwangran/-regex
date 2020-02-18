@@ -49,3 +49,35 @@ Debugger entered--Lisp error: (invalid-read-syntax ") or . in a vector")
 ```
 
 Looks like I am missing some context here.
+
+
+
+
+- matches two or more blank lines in sequence.
+
+` (re-search-forward "^\n\\{2,\\}")`
+
+
+- match TODO
+
+`(re-search-forward "\\[TODO\\](\\([^\\)]+\\))" nil t)`
+
+- match UUID
+
+`(re-search-forward "PDFNAME::\\([a-zA-Z0-9 \.\_\,\-]+\\)\.pdf - " nil t)`
+
+- match page number
+
+`(re-search-forward "PAGENUM::\\([0-9]+\\)::END" nil t)`
+
+- match secrete
+
+`(re-search-forward (concat arg "::\\(.*\\)"))`
+
+- match @dfn{xxx}
+
+`(re-search-forward "@dfn{\\([^}]+\\)}" nil t)`
+
+- match end sentence
+
+`(re-search-forward "[\.,;:!\?]" end t)`
