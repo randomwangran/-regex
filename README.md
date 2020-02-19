@@ -86,3 +86,8 @@ Looks like I am missing some context here.
 - match end sentence
 
 `(re-search-forward "[\.,;:!\?]" end t)`
+
+
+* python
+** white space
+https://gitlab.kwant-project.org/kwant/kwant/blob/master/check_whitespace
